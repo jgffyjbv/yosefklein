@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /thanks.html
 
-Sitemap: https://jgffyjbv.github.io/yosefklein/sitemap.xml
+Sitemap: https://yosefkleintherapy.com/sitemap.xml
