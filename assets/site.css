@@ -101,7 +101,10 @@ strong{color:var(--ink);font-weight:700}
   display:flex;align-items:center;justify-content:space-between;
   height:74px;gap:24px;
 }
-.brand{display:flex;flex-direction:column;line-height:1.2}
+.brand{display:flex;align-items:center;gap:12px;line-height:1.2}
+.brand__mark{flex:none}
+@media (max-width:600px){.brand__mark{width:33px;height:33px}}
+.brand__text{display:flex;flex-direction:column}
 .brand__name{font-family:'Lora',serif;font-size:1.22rem;font-weight:600;color:var(--pine-deep);letter-spacing:.01em}
 .brand__cred{font-size:.72rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--sage)}
 .nav__links{display:flex;align-items:center;gap:30px;list-style:none}
