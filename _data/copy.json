@@ -1,11 +1,18 @@
 {
+  "launch_gate": {
+    "enabled": "yes",
+    "title": "A steady place to slow down.",
+    "line1": "Many of us spend years carrying a heavy internal weight alone, waiting for the right time to slow down and understand what is happening beneath the surface.",
+    "line2": "My full website and private practice will be launching here soon, pending final state licensure.",
+    "badge": "Check Back Soon!"
+  },
   "index": {
-    "meta_description": "Therapy for Orthodox Jewish men and adolescents with Yosef Klein, LMHC — in person in Monsey, NY (Rockland County) and virtual across New York State. Yiddish &amp; English.",
+    "meta_description": "Therapy for Orthodox Jewish men and adolescents with Yosef Klein, MHC-LP — in person in Monsey, NY (Rockland County) and virtual across New York State. Yiddish &amp; English.",
     "hero_title": "You don&rsquo;t have to carry this alone anymore.",
     "hero_lead_1": "Many of the men I work with appear steady on the outside but feel overwhelmed, disconnected, or under constant pressure inside. They&rsquo;ve spent years being responsible for work, family, and everyone around them &mdash; while quietly carrying struggles they rarely talk about.",
     "hero_lead_2": "<strong>You don&rsquo;t have to keep doing that by yourself.</strong>",
     "hero_rings_text": "Slow down.<br>Begin here.",
-    "intro_strip": "<strong>Yosef Klein, LMHC</strong> &middot; Licensed Mental Health Counselor &middot; Working primarily with Orthodox Jewish men and adolescents",
+    "intro_strip": "<strong>Yosef Klein, MHC-LP</strong> &middot; Licensed Mental Health Counselor &middot; Working primarily with Orthodox Jewish men and adolescents",
     "familiar_heading": "You may be feeling&hellip;",
     "familiar_list": [
       "Anxious or constantly under pressure",
@@ -49,7 +56,7 @@
     "cta_text": "Most people don&rsquo;t begin therapy because everything is clear. They begin because something feels too heavy to carry alone. <em>We can begin there.</em>"
   },
   "about": {
-    "meta_description": "Yosef Klein, LMHC is a licensed mental health counselor in Monsey, NY. Relational, trauma-informed therapy for Orthodox Jewish men and adolescents — in person in Rockland County and virtually across New York State.",
+    "meta_description": "Yosef Klein, MHC-LP is a licensed mental health counselor in Monsey, NY. Relational, trauma-informed therapy for Orthodox Jewish men and adolescents — in person in Rockland County and virtually across New York State.",
     "hero_title": "Why I do this work",
     "hero_lead_1": "I&rsquo;ve noticed a pattern in many of the people I work with. They aren&rsquo;t lacking strength. They&rsquo;ve simply carried too much for too long &mdash; and they&rsquo;ve become very good at functioning while quietly struggling underneath.",
     "hero_lead_2": "<strong>Helping people reconnect with themselves and with others is what drew me to this work.</strong>",
@@ -222,12 +229,5 @@
     "meta_description": "Your message has been sent. Yosef Klein, LMHC will be in touch soon to find a time to talk.",
     "hero_title": "Thank you for reaching out.",
     "hero_lead": "Your message has been sent. I read every message personally, and I&rsquo;ll be in touch soon to find a time to talk. Reaching out isn&rsquo;t a small step &mdash; I&rsquo;m glad you took it."
-  },
-  "launch_gate": {
-    "enabled": "yes",
-    "title": "A steady place to slow down.",
-    "line1": "Many of us spend years carrying a heavy internal weight alone, waiting for the right time to slow down and understand what is happening beneath the surface.",
-    "line2": "My full website and private practice will be launching here soon, pending final state licensure.",
-    "badge": "Check Back Soon!"
   }
 }
