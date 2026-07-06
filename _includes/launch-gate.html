@@ -1,0 +1,25 @@
+{% if site.data.copy.launch_gate.enabled == "yes" %}
+<div class="launch-gate" role="dialog" aria-modal="true" aria-label="Launching soon">
+  <style>
+    .launch-gate{position:fixed;inset:0;z-index:9999;background:var(--cream,#FAF7F1);display:flex;align-items:center;justify-content:center;padding:28px;text-align:center;overflow-y:auto}
+    .launch-gate::before{content:"";position:fixed;top:-220px;right:-160px;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(127,149,127,.14),transparent 65%);pointer-events:none}
+    .launch-gate::after{content:"";position:fixed;bottom:-240px;left:-180px;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,rgba(194,155,108,.10),transparent 65%);pointer-events:none}
+    .launch-gate__inner{max-width:620px;position:relative;z-index:1;margin:auto}
+    .launch-gate__mark{margin:0 auto 30px;display:block}
+    .launch-gate__brand{font-size:.78rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--sage,#7F957F);margin-bottom:26px}
+    .launch-gate__title{font-family:'Lora',Georgia,serif;font-weight:500;font-size:clamp(1.9rem,5vw,2.9rem);color:var(--pine-deep,#2F4438);line-height:1.25;margin-bottom:22px}
+    .launch-gate__text{color:var(--ink-soft,#5C6B60);font-size:1.08rem;line-height:1.85;margin-bottom:16px}
+    .launch-gate__note{color:var(--ink,#333F37);font-weight:700;font-size:1.02rem;line-height:1.75;margin-bottom:34px}
+    .launch-gate__badge{display:inline-block;background:var(--pine,#3F584A);color:#FDFBF6;font-weight:700;font-size:1.02rem;letter-spacing:.04em;padding:14px 36px;border-radius:999px;box-shadow:0 10px 30px rgba(63,88,74,.18)}
+  </style>
+  <div class="launch-gate__inner">
+    <svg class="launch-gate__mark" width="74" height="74" viewBox="0 0 48 48" fill="none" aria-hidden="true"><circle cx="24" cy="24" r="19" stroke="#7F957F" stroke-width="2" stroke-linecap="round" stroke-dasharray="99 42" transform="rotate(-55 24 24)"/><circle cx="24" cy="24" r="12.5" stroke="#3F584A" stroke-width="2" stroke-linecap="round" stroke-dasharray="62 28" transform="rotate(115 24 24)"/><circle cx="24" cy="24" r="4.2" fill="#C29B6C"/></svg>
+    <p class="launch-gate__brand">Yosef Klein &middot; LMHC &middot; Psychotherapy</p>
+    <h2 class="launch-gate__title">{{ site.data.copy.launch_gate.title }}</h2>
+    <p class="launch-gate__text">{{ site.data.copy.launch_gate.line1 }}</p>
+    <p class="launch-gate__note">{{ site.data.copy.launch_gate.line2 }}</p>
+    <span class="launch-gate__badge">{{ site.data.copy.launch_gate.badge }}</span>
+  </div>
+  <script>document.documentElement.style.overflow='hidden';</script>
+</div>
+{% endif %}

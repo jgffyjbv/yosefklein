@@ -8,6 +8,25 @@ content:
     type: file
     path: _data/copy.json
     fields:
+      - name: launch_gate
+        label: "🚦 Coming Soon Overlay (pre-launch gate)"
+        type: object
+        fields:
+          - name: enabled
+            label: "Show the Coming Soon overlay? Type exactly: yes  (to show it)  or  no  (to launch the real site)"
+            type: string
+          - name: title
+            label: "Overlay — big headline"
+            type: string
+          - name: line1
+            label: "Overlay — first paragraph"
+            type: text
+          - name: line2
+            label: "Overlay — launching soon line"
+            type: text
+          - name: badge
+            label: "Overlay — button-style badge text"
+            type: string
       - name: index
         label: "Home Page"
         type: object

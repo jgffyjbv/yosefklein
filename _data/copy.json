@@ -222,5 +222,12 @@
     "meta_description": "Your message has been sent. Yosef Klein, LMHC will be in touch soon to find a time to talk.",
     "hero_title": "Thank you for reaching out.",
     "hero_lead": "Your message has been sent. I read every message personally, and I&rsquo;ll be in touch soon to find a time to talk. Reaching out isn&rsquo;t a small step &mdash; I&rsquo;m glad you took it."
+  },
+  "launch_gate": {
+    "enabled": "yes",
+    "title": "A steady place to slow down.",
+    "line1": "Many of us spend years carrying a heavy internal weight alone, waiting for the right time to slow down and understand what is happening beneath the surface.",
+    "line2": "My full website and private practice will be launching here soon, pending final state licensure.",
+    "badge": "Check Back Soon!"
   }
 }
