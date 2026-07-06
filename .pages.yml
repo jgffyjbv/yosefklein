@@ -1,0 +1,465 @@
+media:
+  input: assets/img
+  output: assets/img
+content:
+  - name: wording
+    label: Website Wording
+    icon: text-cursor
+    type: file
+    path: _data/copy.json
+    fields:
+      - name: index
+        label: "Home Page"
+        type: object
+        fields:
+          - name: meta_description
+            label: "SEO — search result description"
+            type: text
+          - name: hero_title
+            label: "Hero — main headline"
+            type: string
+          - name: hero_lead_1
+            label: "Hero — opening paragraph"
+            type: text
+          - name: hero_lead_2
+            label: "Hero — bold closing line"
+            type: text
+          - name: hero_rings_text
+            label: "Hero — circle graphic text"
+            type: string
+          - name: intro_strip
+            label: "Intro strip — credentials line"
+            type: text
+          - name: familiar_heading
+            label: "Sound familiar — section heading"
+            type: string
+          - name: familiar_list
+            label: "Sound familiar — feelings list"
+            type: string
+            list: true
+          - name: familiar_closing
+            label: "Sound familiar — closing line"
+            type: text
+          - name: not_broken_serif
+            label: "You are not broken — main statement"
+            type: text
+          - name: not_broken_text
+            label: "You are not broken — follow-up line"
+            type: text
+          - name: therapy_heading
+            label: "What therapy looks like — section heading"
+            type: string
+          - name: therapy_intro
+            label: "What therapy looks like — intro line"
+            type: text
+          - name: card_explore_title
+            label: "Therapy card 1 — title (We explore together)"
+            type: string
+          - name: card_explore_text
+            label: "Therapy card 1 — description"
+            type: text
+          - name: card_beyond_title
+            label: "Therapy card 2 — title (Beyond feeling better)"
+            type: string
+          - name: card_beyond_text
+            label: "Therapy card 2 — description"
+            type: text
+          - name: card_pace_title
+            label: "Therapy card 3 — title (At your pace)"
+            type: string
+          - name: card_pace_text
+            label: "Therapy card 3 — description"
+            type: text
+          - name: agenda_serif
+            label: "Space without an agenda — main statement"
+            type: text
+          - name: agenda_text
+            label: "Space without an agenda — bold welcome line"
+            type: text
+          - name: approach_heading
+            label: "My approach — section heading"
+            type: string
+          - name: approach_text_1
+            label: "My approach — first paragraph"
+            type: text
+          - name: approach_text_2
+            label: "My approach — second paragraph"
+            type: text
+          - name: approach_modalities
+            label: "My approach — modality card titles"
+            type: string
+            list: true
+          - name: about_heading
+            label: "About me — section heading"
+            type: string
+          - name: about_text_1
+            label: "About me — first paragraph"
+            type: text
+          - name: about_text_2
+            label: "About me — second paragraph"
+            type: text
+          - name: location_heading
+            label: "Where I work — section heading"
+            type: string
+          - name: location_inperson_title
+            label: "Where I work — in-person card title"
+            type: string
+          - name: location_inperson_text
+            label: "Where I work — in-person card description"
+            type: text
+          - name: location_virtual_title
+            label: "Where I work — virtual card title"
+            type: string
+          - name: location_virtual_text
+            label: "Where I work — virtual card description"
+            type: text
+          - name: cta_heading
+            label: "Closing CTA — heading"
+            type: string
+          - name: cta_text
+            label: "Closing CTA — paragraph"
+            type: text
+      - name: about
+        label: "About Page"
+        type: object
+        fields:
+          - name: meta_description
+            label: "SEO — page description (search engines)"
+            type: text
+          - name: hero_title
+            label: "Hero — main headline"
+            type: string
+          - name: hero_lead_1
+            label: "Hero — opening paragraph"
+            type: text
+          - name: hero_lead_2
+            label: "Hero — bold closing line"
+            type: text
+          - name: path_title
+            label: "My Path Here — section heading"
+            type: string
+          - name: path_p1
+            label: "My Path Here — paragraph 1 (background)"
+            type: text
+          - name: path_p2
+            label: "My Path Here — paragraph 2 (becoming a therapist)"
+            type: text
+          - name: path_p3
+            label: "My Path Here — paragraph 3 (office & locations)"
+            type: text
+          - name: belief_statement
+            label: "What I Believe — main statement"
+            type: text
+          - name: belief_closing
+            label: "What I Believe — closing line"
+            type: text
+          - name: approach_title
+            label: "How I Work — section heading"
+            type: string
+          - name: approach_lead
+            label: "How I Work — intro line under heading"
+            type: string
+          - name: approach_intro
+            label: "How I Work — lead-in before the list"
+            type: string
+          - name: approach_list
+            label: "How I Work — \"I pay attention to\" list items"
+            type: string
+            list: true
+          - name: approach_closing
+            label: "How I Work — closing paragraph"
+            type: text
+          - name: training_title
+            label: "Training — section heading"
+            type: string
+          - name: training_card_ifs
+            label: "Training — card 1 title (IFS)"
+            type: string
+          - name: training_card_breathwork
+            label: "Training — card 2 title (Breathwork)"
+            type: string
+          - name: training_card_art
+            label: "Training — card 3 title (Accelerated Resolution)"
+            type: string
+          - name: training_card_rlt
+            label: "Training — card 4 title (Relational Life)"
+            type: string
+          - name: training_card_rtt
+            label: "Training — card 5 title (Relational Trauma)"
+            type: string
+          - name: training_card_somatic
+            label: "Training — card 6 title (Somatic)"
+            type: string
+          - name: training_closing
+            label: "Training — closing line"
+            type: text
+          - name: cta_title
+            label: "Bottom CTA band — heading"
+            type: string
+          - name: cta_text
+            label: "Bottom CTA band — paragraph"
+            type: text
+      - name: who_i_help
+        label: "Who I Help Page"
+        type: object
+        fields:
+          - name: meta_description
+            label: "Search engine description (SEO)"
+            type: text
+          - name: hero_title
+            label: "Hero — main headline"
+            type: string
+          - name: hero_lead_1
+            label: "Hero — opening paragraph"
+            type: text
+          - name: hero_lead_2
+            label: "Hero — second paragraph (inside/outside contrast)"
+            type: text
+          - name: recognize_title
+            label: "Recognize Yourself section — heading"
+            type: string
+          - name: recognize_list
+            label: "Recognize Yourself — bullet list of experiences"
+            type: string
+            list: true
+          - name: statement_one_sentence
+            label: "Highlighted statement — \"one sentence is enough\""
+            type: text
+          - name: cards_title
+            label: "Who I Work With section — heading"
+            type: string
+          - name: cards_intro
+            label: "Who I Work With section — intro paragraph (locations)"
+            type: text
+          - name: card_frum_title
+            label: "Card 1 — Orthodox & Chassidish men — title"
+            type: string
+          - name: card_frum_desc
+            label: "Card 1 — Orthodox & Chassidish men — description"
+            type: text
+          - name: card_fathers_title
+            label: "Card 2 — Fathers & husbands — title"
+            type: string
+          - name: card_fathers_desc
+            label: "Card 2 — Fathers & husbands — description"
+            type: text
+          - name: card_business_title
+            label: "Card 3 — Business owners & professionals — title"
+            type: string
+          - name: card_business_desc
+            label: "Card 3 — Business owners & professionals — description"
+            type: text
+          - name: card_young_adults_title
+            label: "Card 4 — Young adults — title"
+            type: string
+          - name: card_young_adults_desc
+            label: "Card 4 — Young adults — description"
+            type: text
+          - name: card_leaned_on_title
+            label: "Card 5 — The ones everyone leans on — title"
+            type: string
+          - name: card_leaned_on_desc
+            label: "Card 5 — The ones everyone leans on — description"
+            type: text
+          - name: card_quietly_title
+            label: "Card 6 — Quietly struggling — title"
+            type: string
+          - name: card_quietly_desc
+            label: "Card 6 — Quietly struggling — description"
+            type: text
+          - name: beneath_title
+            label: "Beneath the Surface section — heading"
+            type: string
+          - name: beneath_body
+            label: "Beneath the Surface — main paragraph"
+            type: text
+          - name: beneath_statement
+            label: "Beneath the Surface — highlighted statement"
+            type: text
+          - name: no_words_quote
+            label: "No Perfect Words section — quoted line"
+            type: text
+          - name: no_words_body
+            label: "No Perfect Words section — supporting paragraph"
+            type: text
+          - name: cta_title
+            label: "Closing CTA band — heading"
+            type: string
+          - name: cta_body
+            label: "Closing CTA band — paragraph"
+            type: text
+      - name: breathwork
+        label: "Breathwork Page"
+        type: object
+        fields:
+          - name: meta_description
+            label: "SEO — search result description"
+            type: text
+          - name: hero_title
+            label: "Hero — main headline"
+            type: string
+          - name: hero_lead_1
+            label: "Hero — intro paragraph 1"
+            type: text
+          - name: hero_lead_2
+            label: "Hero — intro paragraph 2"
+            type: text
+          - name: what_title
+            label: "What is it — section heading"
+            type: string
+          - name: what_body_1
+            label: "What is it — paragraph 1"
+            type: text
+          - name: what_body_2
+            label: "What is it — paragraph 2"
+            type: text
+          - name: rings_text
+            label: "Breathing rings graphic — center text"
+            type: string
+          - name: session_title
+            label: "What a session looks like — section heading"
+            type: string
+          - name: card_checkin_title
+            label: "Session step 1 — card title"
+            type: string
+          - name: card_checkin_desc
+            label: "Session step 1 — card description"
+            type: text
+          - name: card_breathing_title
+            label: "Session step 2 — card title"
+            type: string
+          - name: card_breathing_desc
+            label: "Session step 2 — card description"
+            type: text
+          - name: card_integrate_title
+            label: "Session step 3 — card title"
+            type: string
+          - name: card_integrate_desc
+            label: "Session step 3 — card description"
+            type: text
+          - name: session_note
+            label: "What a session looks like — closing note"
+            type: text
+          - name: benefits_title
+            label: "How it helps — section heading"
+            type: string
+          - name: benefits_intro
+            label: "How it helps — intro line"
+            type: string
+          - name: benefits_list
+            label: "How it helps — list of benefits"
+            type: string
+            list: true
+          - name: benefits_note
+            label: "How it helps — closing note"
+            type: text
+          - name: statement_serif
+            label: "Is it right for everyone — main statement"
+            type: text
+          - name: statement_body
+            label: "Is it right for everyone — supporting line"
+            type: text
+          - name: cta_title
+            label: "Bottom call-to-action — heading"
+            type: string
+          - name: cta_body
+            label: "Bottom call-to-action — paragraph"
+            type: text
+          - name: cta_note
+            label: "Bottom call-to-action — note under button"
+            type: string
+      - name: faq
+        label: "FAQ Page"
+        type: object
+        fields:
+          - name: meta_description
+            label: "SEO — search result description"
+            type: text
+          - name: hero_title
+            label: "Hero — main headline"
+            type: string
+          - name: hero_lead
+            label: "Hero — intro paragraph"
+            type: text
+          - name: items
+            label: "FAQ — questions & answers"
+            type: object
+            list: true
+            fields:
+              - name: q
+                label: "Question"
+                type: string
+              - name: a
+                label: "Answer"
+                type: text
+          - name: statement_text
+            label: "Getting started — statement text"
+            type: text
+          - name: cta_title
+            label: "Closing CTA — heading"
+            type: string
+          - name: cta_lead
+            label: "Closing CTA — paragraph"
+            type: text
+          - name: cta_note
+            label: "Closing CTA — small note under button"
+            type: string
+      - name: contact
+        label: "Contact Page"
+        type: object
+        fields:
+          - name: meta_description
+            label: "SEO — page description (search results)"
+            type: text
+          - name: hero_title
+            label: "Hero — main headline"
+            type: string
+          - name: hero_lead
+            label: "Hero — intro paragraph"
+            type: text
+          - name: form_title
+            label: "Contact form — heading"
+            type: string
+          - name: form_intro
+            label: "Contact form — intro sentence"
+            type: text
+          - name: form_note
+            label: "Contact form — privacy note under Send button"
+            type: text
+          - name: card_email_title
+            label: "Email card — title"
+            type: string
+          - name: card_email_text
+            label: "Email card — text (after the email address)"
+            type: text
+          - name: card_office_title
+            label: "Office card — title"
+            type: string
+          - name: card_office_text
+            label: "Office card — description"
+            type: text
+          - name: card_virtual_title
+            label: "Virtual sessions card — title"
+            type: string
+          - name: card_virtual_text
+            label: "Virtual sessions card — description"
+            type: text
+          - name: card_languages_title
+            label: "Languages card — title"
+            type: string
+          - name: card_languages_text
+            label: "Languages card — description"
+            type: text
+      - name: thanks
+        label: "Thank You Page"
+        type: object
+        fields:
+          - name: meta_description
+            label: "SEO — page description (search engines)"
+            type: text
+          - name: hero_title
+            label: "Hero — main headline"
+            type: string
+          - name: hero_lead
+            label: "Hero — confirmation paragraph"
+            type: text

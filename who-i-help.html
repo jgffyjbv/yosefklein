@@ -1,10 +1,12 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Who I Help — Therapy for Orthodox Jewish Men &amp; Adolescents | Monsey &amp; Rockland County, NY</title>
-<meta name="description" content="Therapy for men who carry more than most people realize — Orthodox and Chassidish men, fathers, and professionals in Monsey, NY and Rockland County.">
+<meta name="description" content="{{ site.data.copy.who_i_help.meta_description }}">
 <meta property="og:title" content="Who I Help — Yosef Klein, LMHC | Monsey, NY">
 <meta property="og:description" content="Therapy for men who carry more than most people realize. Orthodox and Chassidish Jewish men, fathers, business owners, and young adults — in Monsey, NY and across New York State.">
 <meta property="og:type" content="website">
@@ -74,9 +76,9 @@
 <section class="pagehero">
   <div class="wrap reveal in">
     <span class="eyebrow">Who I Help</span>
-    <h1>Therapy for men who carry more than most people realize.</h1>
-    <p>Many of the people I work with don&rsquo;t think of themselves as the type of person who would go to therapy. They&rsquo;re responsible. They work hard. They take care of their families. People depend on them.</p>
-    <p style="margin-top:14px">From the outside, life may look stable. <strong>Inside, it can feel very different.</strong></p>
+    <h1>{{ site.data.copy.who_i_help.hero_title }}</h1>
+    <p>{{ site.data.copy.who_i_help.hero_lead_1 }}</p>
+    <p style="margin-top:14px">{{ site.data.copy.who_i_help.hero_lead_2 }}</p>
   </div>
 </section>
 
@@ -85,17 +87,11 @@
   <div class="wrap">
     <div class="section__head reveal">
       <span class="eyebrow">You might recognize yourself here</span>
-      <h2>The weight you carry quietly</h2>
+      <h2>{{ site.data.copy.who_i_help.recognize_title }}</h2>
     </div>
     <div class="wrap--narrow" style="margin:0 auto">
       <ul class="softlist reveal" data-delay="1">
-        <li>You feel pressure to hold everything together.</li>
-        <li>You worry more than you let people know.</li>
-        <li>You find it difficult to talk about what&rsquo;s really going on.</li>
-        <li>Relationships feel harder than they should.</li>
-        <li>You carry stress, sadness, anger, or loneliness that rarely has a place to go.</li>
-        <li>You keep functioning &mdash; but don&rsquo;t always feel connected to yourself.</li>
-        <li>You wonder why life feels heavier than it seems for other people.</li>
+        {% for item in site.data.copy.who_i_help.recognize_list %}<li>{{ item }}</li>{% endfor %}
       </ul>
     </div>
   </div>
@@ -108,7 +104,7 @@
       <div class="ornament" aria-hidden="true">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/></svg>
       </div>
-      <p class="serif">You don&rsquo;t need to relate to every word. Sometimes one sentence is enough.</p>
+      <p class="serif">{{ site.data.copy.who_i_help.statement_one_sentence }}</p>
     </div>
   </div>
 </section>
@@ -118,51 +114,51 @@
   <div class="wrap">
     <div class="section__head reveal">
       <span class="eyebrow">Many of the people I work with are&hellip;</span>
-      <h2>Men in every season of responsibility</h2>
-      <p>They come from Monsey, Spring Valley, Airmont, Chestnut Ridge, and around Rockland County &mdash; and meet with me virtually from across New York State.</p>
+      <h2>{{ site.data.copy.who_i_help.cards_title }}</h2>
+      <p>{{ site.data.copy.who_i_help.cards_intro }}</p>
     </div>
     <div class="grid grid--3">
       <div class="card reveal" data-delay="1">
         <div class="card__icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c1-4 4-6 7-6s6 2 7 6"/></svg>
         </div>
-        <h3>Orthodox &amp; Chassidish men</h3>
-        <p>Men from frum communities who want a therapist who understands their world &mdash; without needing everything explained.</p>
+        <h3>{{ site.data.copy.who_i_help.card_frum_title }}</h3>
+        <p>{{ site.data.copy.who_i_help.card_frum_desc }}</p>
       </div>
       <div class="card reveal" data-delay="2">
         <div class="card__icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11.5 12 4l8 7.5"/><path d="M6.5 10v10h11V10"/></svg>
         </div>
-        <h3>Fathers &amp; husbands</h3>
-        <p>Trying to balance many responsibilities at once &mdash; at home, at work, and in the community.</p>
+        <h3>{{ site.data.copy.who_i_help.card_fathers_title }}</h3>
+        <p>{{ site.data.copy.who_i_help.card_fathers_desc }}</p>
       </div>
       <div class="card reveal" data-delay="3">
         <div class="card__icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="12" rx="2"/><path d="M9 8V6a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/><path d="M3 13h18"/></svg>
         </div>
-        <h3>Business owners &amp; professionals</h3>
-        <p>Carrying significant pressure &mdash; decisions, payroll, expectations &mdash; often with no one to share it with.</p>
+        <h3>{{ site.data.copy.who_i_help.card_business_title }}</h3>
+        <p>{{ site.data.copy.who_i_help.card_business_desc }}</p>
       </div>
       <div class="card reveal" data-delay="1">
         <div class="card__icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2 5-5 2 2-5z"/></svg>
         </div>
-        <h3>Young adults</h3>
-        <p>Figuring out relationships, direction, and identity &mdash; and what kind of life they want to build.</p>
+        <h3>{{ site.data.copy.who_i_help.card_young_adults_title }}</h3>
+        <p>{{ site.data.copy.who_i_help.card_young_adults_desc }}</p>
       </div>
       <div class="card reveal" data-delay="2">
         <div class="card__icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/></svg>
         </div>
-        <h3>The ones everyone leans on</h3>
-        <p>Men who have spent years taking care of everyone else &mdash; and rarely had a place of their own.</p>
+        <h3>{{ site.data.copy.who_i_help.card_leaned_on_title }}</h3>
+        <p>{{ site.data.copy.who_i_help.card_leaned_on_desc }}</p>
       </div>
       <div class="card reveal" data-delay="3">
         <div class="card__icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9c1.5-1.4 3-1.4 4.5 0s3 1.4 4.5 0 3-1.4 4.5 0 3 1.4 4.5 0"/><path d="M12 6.5a6 6 0 0 1 6 6c0 3.3-2.7 6-6 6s-6-2.7-6-6a6 6 0 0 1 6-6z" stroke-dasharray="2.5 3"/><circle cx="12" cy="13.5" r="2.2"/></svg>
         </div>
-        <h3>Quietly struggling</h3>
-        <p>Successful on the outside, but internally carrying anxiety, loneliness, shame, or emotional exhaustion that few people see.</p>
+        <h3>{{ site.data.copy.who_i_help.card_quietly_title }}</h3>
+        <p>{{ site.data.copy.who_i_help.card_quietly_desc }}</p>
       </div>
     </div>
   </div>
@@ -174,11 +170,11 @@
     <div class="wrap--narrow" style="margin:0 auto;text-align:center">
       <div class="section__head reveal" style="margin-bottom:30px">
         <span class="eyebrow">Beneath the surface</span>
-        <h2>Sometimes the struggle underneath looks different</h2>
+        <h2>{{ site.data.copy.who_i_help.beneath_title }}</h2>
       </div>
-      <p class="reveal" data-delay="1" style="font-size:1.05rem">People often come to therapy because of anxiety, depression, relationship difficulties, stress, or feeling stuck. As we work together, we sometimes discover deeper patterns &mdash; old experiences, unspoken losses, childhood relationships, ways of coping that once made sense but no longer serve you.</p>
+      <p class="reveal" data-delay="1" style="font-size:1.05rem">{{ site.data.copy.who_i_help.beneath_body }}</p>
       <div class="statement reveal" data-delay="2" style="margin-top:36px">
-        <p class="serif">None of this means something is wrong with you. It simply means there&rsquo;s a story worth understanding.</p>
+        <p class="serif">{{ site.data.copy.who_i_help.beneath_statement }}</p>
       </div>
     </div>
   </div>
@@ -192,8 +188,8 @@
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8 8 0 0 1-8.5 8L7 21l1-3.5A8 8 0 1 1 21 11.5z"/></svg>
       </div>
       <span class="eyebrow">You don&rsquo;t need to explain everything perfectly</span>
-      <p class="serif">&ldquo;I don&rsquo;t even know how to describe what&rsquo;s going on.&rdquo;</p>
-      <p>It&rsquo;s one of the most common things I hear &mdash; and that&rsquo;s okay. You don&rsquo;t need the right words before starting. <strong>We can figure them out together.</strong></p>
+      <p class="serif">{{ site.data.copy.who_i_help.no_words_quote }}</p>
+      <p>{{ site.data.copy.who_i_help.no_words_body }}</p>
       <div style="margin-top:30px">
         <a class="btn btn--ghost" href="contact.html">Reach Out
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
@@ -206,8 +202,8 @@
 <!-- ============ CLOSING CTA ============ -->
 <section class="cta">
   <div class="wrap reveal">
-    <h2>If this feels familiar, you can begin here.</h2>
-    <p>You don&rsquo;t have to know exactly what you need. You don&rsquo;t have to be in crisis. You don&rsquo;t even have to be certain therapy is the answer. <em>You simply have to be willing to begin.</em></p>
+    <h2>{{ site.data.copy.who_i_help.cta_title }}</h2>
+    <p>{{ site.data.copy.who_i_help.cta_body }}</p>
     <a class="btn btn--light" href="contact.html">Schedule a Consultation
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
     </a>

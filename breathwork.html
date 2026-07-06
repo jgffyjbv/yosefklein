@@ -1,10 +1,12 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Psychosomatic Breathwork in Monsey, NY | Yosef Klein, LMHC</title>
-<meta name="description" content="Psychosomatic Breathwork with Yosef Klein, LMHC — a guided, body-based practice working with breathing, awareness, and the nervous system. Offered in Monsey, NY (Rockland County) within a safe therapeutic setting.">
+<meta name="description" content="{{ site.data.copy.breathwork.meta_description }}">
 <meta property="og:title" content="Psychosomatic Breathwork in Monsey, NY | Yosef Klein, LMHC">
 <meta property="og:description" content="A guided, body-based practice working with breathing, awareness, and the nervous system — offered within a safe therapeutic setting in Monsey, NY.">
 <meta property="og:type" content="website">
@@ -73,9 +75,9 @@
 <!-- ============ PAGE HERO ============ -->
 <section class="pagehero">
   <div class="wrap reveal in">
-    <h1><span class="eyebrow" style="display:block">Psychosomatic Breathwork &middot; Monsey, NY</span>Working with what words don&rsquo;t always reach.</h1>
-    <p>Sometimes people understand their struggles intellectually. They know their patterns. They&rsquo;ve thought about them for years. Yet something inside still feels stuck.</p>
-    <p style="margin-top:14px">The body can carry experiences that are difficult to access through conversation alone. <strong>Psychosomatic Breathwork offers another way of working with those experiences.</strong></p>
+    <h1><span class="eyebrow" style="display:block">Psychosomatic Breathwork &middot; Monsey, NY</span>{{ site.data.copy.breathwork.hero_title }}</h1>
+    <p>{{ site.data.copy.breathwork.hero_lead_1 }}</p>
+    <p style="margin-top:14px">{{ site.data.copy.breathwork.hero_lead_2 }}</p>
   </div>
 </section>
 
@@ -85,15 +87,15 @@
     <div class="split">
       <div class="reveal">
         <span class="eyebrow">What is it?</span>
-        <h2>A guided, body-based practice</h2>
-        <p>Psychosomatic Breathwork works with breathing, awareness, and the nervous system. Within a safe therapeutic setting &mdash; at my office in Monsey, NY, here in Rockland County &mdash; it can help you connect with emotions, physical sensations, and experiences that may have been difficult to access or process.</p>
-        <p>The goal isn&rsquo;t intensity. <strong>The goal is awareness, regulation, and integration.</strong></p>
+        <h2>{{ site.data.copy.breathwork.what_title }}</h2>
+        <p>{{ site.data.copy.breathwork.what_body_1 }}</p>
+        <p>{{ site.data.copy.breathwork.what_body_2 }}</p>
       </div>
       <div class="reveal" data-delay="1">
         <div class="rings" aria-hidden="true">
           <span></span><span></span><span></span><span></span>
           <div class="rings__center">
-            <p class="serif">Inhale.<br>Notice.<br>Soften.</p>
+            <p class="serif">{{ site.data.copy.breathwork.rings_text }}</p>
           </div>
         </div>
       </div>
@@ -106,32 +108,32 @@
   <div class="wrap">
     <div class="section__head reveal">
       <span class="eyebrow">What does a session look like?</span>
-      <h2>Unhurried, from beginning to end</h2>
+      <h2>{{ site.data.copy.breathwork.session_title }}</h2>
     </div>
     <div class="grid grid--3">
       <div class="card reveal" data-delay="1">
         <div class="card__icon">
           <span class="serif" style="font-size:1.3rem">1</span>
         </div>
-        <h3>We check in</h3>
-        <p>We begin by checking in and understanding where you are &mdash; emotionally and physically.</p>
+        <h3>{{ site.data.copy.breathwork.card_checkin_title }}</h3>
+        <p>{{ site.data.copy.breathwork.card_checkin_desc }}</p>
       </div>
       <div class="card reveal" data-delay="2">
         <div class="card__icon">
           <span class="serif" style="font-size:1.3rem">2</span>
         </div>
-        <h3>Guided breathing</h3>
-        <p>You&rsquo;ll then be guided through a structured breathing process while I remain present and attentive to your experience.</p>
+        <h3>{{ site.data.copy.breathwork.card_breathing_title }}</h3>
+        <p>{{ site.data.copy.breathwork.card_breathing_desc }}</p>
       </div>
       <div class="card reveal" data-delay="3">
         <div class="card__icon">
           <span class="serif" style="font-size:1.3rem">3</span>
         </div>
-        <h3>Space to integrate</h3>
-        <p>Afterward, we slow down and make space to integrate whatever emerged.</p>
+        <h3>{{ site.data.copy.breathwork.card_integrate_title }}</h3>
+        <p>{{ site.data.copy.breathwork.card_integrate_desc }}</p>
       </div>
     </div>
-    <p class="center reveal" data-delay="3" style="margin-top:36px;font-size:1.05rem">The process is always paced with <strong>safety and your individual needs</strong> in mind.</p>
+    <p class="center reveal" data-delay="3" style="margin-top:36px;font-size:1.05rem">{{ site.data.copy.breathwork.session_note }}</p>
   </div>
 </section>
 
@@ -140,18 +142,14 @@
   <div class="wrap">
     <div class="section__head reveal">
       <span class="eyebrow">How can it help?</span>
-      <h2>What people often notice</h2>
-      <p>Over time, many people begin to feel&hellip;</p>
+      <h2>{{ site.data.copy.breathwork.benefits_title }}</h2>
+      <p>{{ site.data.copy.breathwork.benefits_intro }}</p>
     </div>
     <div class="wrap--narrow" style="margin:0 auto">
       <ul class="softlist reveal" data-delay="1">
-        <li>More connected to themselves</li>
-        <li>Less overwhelmed by emotions</li>
-        <li>More aware of their internal experience</li>
-        <li>More grounded and regulated</li>
-        <li>Better able to stay present during difficult moments</li>
+        {% for item in site.data.copy.breathwork.benefits_list %}<li>{{ item }}</li>{% endfor %}
       </ul>
-      <p class="center reveal" data-delay="2" style="margin-top:36px;font-size:1.05rem">Everyone&rsquo;s experience is different, and the process <strong>unfolds gradually over time.</strong></p>
+      <p class="center reveal" data-delay="2" style="margin-top:36px;font-size:1.05rem">{{ site.data.copy.breathwork.benefits_note }}</p>
     </div>
   </div>
 </section>
@@ -164,8 +162,8 @@
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10.5a2.5 2.5 0 1 0-2.5-2.5"/><path d="M3 12h15.5a2.5 2.5 0 1 1-2.5 2.5"/><path d="M3 16h7.5a2.5 2.5 0 1 1-2.5 2.5"/></svg>
       </div>
       <span class="eyebrow">Is it right for everyone?</span>
-      <p class="serif">No. Because breathwork works directly with the nervous system, it isn&rsquo;t appropriate in every situation.</p>
-      <p>Part of our initial conversation is deciding, together, <strong>whether this approach is a good fit for you.</strong></p>
+      <p class="serif">{{ site.data.copy.breathwork.statement_serif }}</p>
+      <p>{{ site.data.copy.breathwork.statement_body }}</p>
     </div>
   </div>
 </section>
@@ -173,12 +171,12 @@
 <!-- ============ CLOSING CTA ============ -->
 <section class="cta">
   <div class="wrap reveal">
-    <h2>Curiosity is enough.</h2>
-    <p>You don&rsquo;t need any previous experience. You don&rsquo;t need to know whether you&rsquo;ll be good at it. You don&rsquo;t even need to understand exactly how it works. <em>You simply need to be curious enough to explore.</em></p>
+    <h2>{{ site.data.copy.breathwork.cta_title }}</h2>
+    <p>{{ site.data.copy.breathwork.cta_body }}</p>
     <a class="btn btn--light" href="contact.html">Schedule a Breathwork Session
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
     </a>
-    <span class="hero__note">Offered in person at my office in Monsey, NY &middot; Yiddish &amp; English</span>
+    <span class="hero__note">{{ site.data.copy.breathwork.cta_note }}</span>
   </div>
 </section>
 

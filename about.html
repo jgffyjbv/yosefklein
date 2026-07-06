@@ -1,10 +1,12 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About Yosef Klein, LMHC | Therapist in Monsey, NY</title>
-<meta name="description" content="Yosef Klein, LMHC is a licensed mental health counselor in Monsey, NY. Relational, trauma-informed therapy for Orthodox Jewish men and adolescents — in person in Rockland County and virtually across New York State.">
+<meta name="description" content="{{ site.data.copy.about.meta_description }}">
 <meta property="og:title" content="About Yosef Klein, LMHC | Therapist in Monsey, NY">
 <meta property="og:description" content="Relational, trauma-informed therapy for Orthodox Jewish men and adolescents — in person in Monsey, NY and virtually across New York State.">
 <meta property="og:type" content="website">
@@ -74,9 +76,9 @@
 <section class="pagehero">
   <div class="wrap reveal in">
     <span class="eyebrow">About</span>
-    <h1>Why I do this work</h1>
-    <p>I&rsquo;ve noticed a pattern in many of the people I work with. They aren&rsquo;t lacking strength. They&rsquo;ve simply carried too much for too long &mdash; and they&rsquo;ve become very good at functioning while quietly struggling underneath.</p>
-    <p style="margin-top:14px"><strong>Helping people reconnect with themselves and with others is what drew me to this work.</strong></p>
+    <h1>{{ site.data.copy.about.hero_title }}</h1>
+    <p>{{ site.data.copy.about.hero_lead_1 }}</p>
+    <p style="margin-top:14px">{{ site.data.copy.about.hero_lead_2 }}</p>
   </div>
 </section>
 
@@ -86,10 +88,10 @@
     <div class="split split--narrow-img">
       <div class="reveal">
         <span class="eyebrow">My path here</span>
-        <h2>Before I was a therapist</h2>
-        <p>Before becoming a therapist, I spent years in business and leadership. I know what it feels like to carry responsibility, pressure, and expectations while trying to keep everything moving.</p>
-        <p>Eventually, I became more interested in what people carry internally than in how they perform externally. That curiosity became a profession.</p>
-        <p>Today, I meet with men and adolescents at my office in <strong>Monsey, NY</strong> &mdash; in person from across Rockland County, and virtually from anywhere in New York State.</p>
+        <h2>{{ site.data.copy.about.path_title }}</h2>
+        <p>{{ site.data.copy.about.path_p1 }}</p>
+        <p>{{ site.data.copy.about.path_p2 }}</p>
+        <p>{{ site.data.copy.about.path_p3 }}</p>
       </div>
       <div class="reveal" data-delay="1">
         <div class="portrait portrait--sm">
@@ -112,8 +114,8 @@
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/></svg>
       </div>
       <span class="eyebrow">What I believe</span>
-      <p class="serif">I don&rsquo;t believe people are broken. I believe people adapt. The ways we learn to survive difficult experiences often become the patterns that shape our relationships, emotions, and sense of self.</p>
-      <p>Healing begins when those patterns can be understood <strong>with curiosity instead of judgment.</strong></p>
+      <p class="serif">{{ site.data.copy.about.belief_statement }}</p>
+      <p>{{ site.data.copy.about.belief_closing }}</p>
     </div>
   </div>
 </section>
@@ -123,18 +125,15 @@
   <div class="wrap">
     <div class="section__head reveal">
       <span class="eyebrow">How I work</span>
-      <h2>Safe enough to be fully yourself</h2>
-      <p>My approach is relational, trauma-informed, and experiential.</p>
+      <h2>{{ site.data.copy.about.approach_title }}</h2>
+      <p>{{ site.data.copy.about.approach_lead }}</p>
     </div>
     <div class="wrap--narrow" style="margin:0 auto">
-      <p class="reveal" data-delay="1">In our work together, I pay attention to&hellip;</p>
+      <p class="reveal" data-delay="1">{{ site.data.copy.about.approach_intro }}</p>
       <ul class="softlist softlist--2col reveal" data-delay="1" style="margin-top:24px">
-        <li>Your emotions, and what lives underneath them</li>
-        <li>Your relationships, past and present</li>
-        <li>The nervous system, and how your body carries stress</li>
-        <li>The stories you carry about yourself</li>
+        {% for item in site.data.copy.about.approach_list %}<li>{{ item }}</li>{% endfor %}
       </ul>
-      <p class="center reveal" data-delay="2" style="margin-top:36px;font-size:1.05rem">The most important part of therapy, though, isn&rsquo;t a technique. <strong>It&rsquo;s building a relationship where you can feel safe enough to be fully yourself.</strong></p>
+      <p class="center reveal" data-delay="2" style="margin-top:36px;font-size:1.05rem">{{ site.data.copy.about.approach_closing }}</p>
       <div class="hero__actions reveal" data-delay="2" style="justify-content:center">
         <a class="btn btn--ghost" href="contact.html">Begin a Conversation
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
@@ -149,55 +148,55 @@
   <div class="wrap">
     <div class="section__head reveal">
       <span class="eyebrow">Training</span>
-      <h2>Advanced training that supports the work</h2>
+      <h2>{{ site.data.copy.about.training_title }}</h2>
     </div>
     <div class="grid grid--3">
       <div class="card reveal" data-delay="1">
         <div class="card__icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="9" r="2.2"/><circle cx="8.5" cy="14.5" r="2.2"/><circle cx="15.5" cy="14.5" r="2.2"/></svg>
         </div>
-        <h3 style="font-size:1.06rem">Internal Family Systems (IFS)</h3>
+        <h3 style="font-size:1.06rem">{{ site.data.copy.about.training_card_ifs }}</h3>
       </div>
       <div class="card reveal" data-delay="1">
         <div class="card__icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h9a3 3 0 1 0-3-3"/><path d="M3 12h13a3 3 0 1 1-3 3"/><path d="M3 16h6"/></svg>
         </div>
-        <h3 style="font-size:1.06rem">Psychosomatic Breathwork</h3>
+        <h3 style="font-size:1.06rem">{{ site.data.copy.about.training_card_breathwork }}</h3>
       </div>
       <div class="card reveal" data-delay="2">
         <div class="card__icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.5l2.5 2.5 4.5-5"/></svg>
         </div>
-        <h3 style="font-size:1.06rem">Accelerated Resolution Therapy</h3>
+        <h3 style="font-size:1.06rem">{{ site.data.copy.about.training_card_art }}</h3>
       </div>
       <div class="card reveal" data-delay="2">
         <div class="card__icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="12" r="5.5"/><circle cx="15" cy="12" r="5.5"/></svg>
         </div>
-        <h3 style="font-size:1.06rem">Relational Life Therapy</h3>
+        <h3 style="font-size:1.06rem">{{ site.data.copy.about.training_card_rlt }}</h3>
       </div>
       <div class="card reveal" data-delay="3">
         <div class="card__icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21V9"/><path d="M12 9c0-4 3-6 7-6 0 4-2 7-7 7"/><path d="M12 14c0-3-2.5-5-6-5 0 3.5 2 6 6 6"/></svg>
         </div>
-        <h3 style="font-size:1.06rem">Relational Trauma Therapy</h3>
+        <h3 style="font-size:1.06rem">{{ site.data.copy.about.training_card_rtt }}</h3>
       </div>
       <div class="card reveal" data-delay="3">
         <div class="card__icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2-5 3 9 2-4h7"/></svg>
         </div>
-        <h3 style="font-size:1.06rem">Somatic Intervention</h3>
+        <h3 style="font-size:1.06rem">{{ site.data.copy.about.training_card_somatic }}</h3>
       </div>
     </div>
-    <p class="center reveal" data-delay="3" style="margin-top:40px;font-size:1.05rem">These approaches support the work &mdash; but <strong>the relationship always comes first.</strong></p>
+    <p class="center reveal" data-delay="3" style="margin-top:40px;font-size:1.05rem">{{ site.data.copy.about.training_closing }}</p>
   </div>
 </section>
 
 <!-- ============ CLOSING CTA ============ -->
 <section class="cta">
   <div class="wrap reveal">
-    <h2>You don&rsquo;t need to know exactly what to say.</h2>
-    <p>If something here resonates, that&rsquo;s enough. <em>We can begin there.</em></p>
+    <h2>{{ site.data.copy.about.cta_title }}</h2>
+    <p>{{ site.data.copy.about.cta_text }}</p>
     <a class="btn btn--light" href="contact.html">Schedule a Consultation
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
     </a>
