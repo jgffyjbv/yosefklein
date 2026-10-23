@@ -9,7 +9,7 @@ Static site for Yosef Klein, LMHC — licensed mental health counselor in Monsey
 - `who-i-help.html` — Who I Help
 - `breathwork.html` — Psychosomatic Breathwork
 - `faq.html` — FAQ (with FAQPage JSON-LD)
-- `contact.html` — Contact form (FormSubmit → mail.klein@gmail.com)
+- `contact.html` — Contact form (FormSubmit → mail.klein@gmail.com, posted via the hashed alias `452b574e6d86ad6b7e0b205739b40361` so the address is not exposed in the HTML)
 - `thanks.html` — Post-submit thank-you (noindex)
 
 ## Stack
